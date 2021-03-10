@@ -11,7 +11,7 @@ module.exports = (app) => {
   app.get('/api/whitelists/:id', notesController.get);
 
   //#check if this address is belong to whitelist or not
-  app.get('/whitelists/:id', notesController.check);
+  app.get('/api/check/:id', notesController.check);
 
   //#update a note
   app.put('/api/whitelists/:id', notesController.update);
