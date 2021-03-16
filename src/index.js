@@ -1,8 +1,11 @@
 const fastify = require('fastify');
+const cors = require('cors');
 const app = fastify();
 const mongoose = require('mongoose');
 const noteRoutes = require('./routes/noteRoutes');
 const contentRangeHook = require('./hooks/contentRangeHook');
+
+app.use(cors());
 
 try {
   mongoose.connect('mongodb://localhost:27017/notes_db', {

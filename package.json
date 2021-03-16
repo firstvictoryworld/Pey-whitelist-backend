@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/LanciWeb/fastify-notes-backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "fastify": "^3.6.0",
     "mongoose": "^5.10.9",
     "nodemon": "^2.0.4"
